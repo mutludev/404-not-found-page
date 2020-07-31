@@ -6,8 +6,12 @@
     padding: 0;
 }
 
+body {
+    position: absolute;
+}
+
 nav {
-    margin: 0 20px;
+    margin: 0 35px;
 }
 
 
@@ -15,5 +19,85 @@ nav {
     font-family: "Inconsolata",sans-serif;
     font-weight: bold;
     font-size: 24px;
-    padding: 15px;
+    padding: 30px;
+}
+
+.main-container {
+    margin: 150px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 100%;
+}
+
+.main-container img {
+    width: 500px; 
+}
+
+.not-found-content {
+    font-family: "Inconsolata",sans-serif;
+    width: 600px;
+}
+
+.not-found-content h1 {
+    color: #333333;
+    font-size: 64px;
+    line-height: 95px;
+}
+
+.not-found-content p {
+    margin-top: 30px;
+    color: #4F4F4F;
+    font-size: 24px;
+    width: 330px;
+    margin-bottom: 80px;
+    line-height: 36px;
+}
+
+.not-found-content a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    background-color: #333333;
+    padding: 20px 29px;
+}
+.footer {
+    position: absolute;
+    font-family: "Inconsolata",sans-serif;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 650px) {
+    .main-container {
+        flex-direction: column;
+        margin: 15px;
+        align-items: center;
+    }
+    .main-container img {
+        width: 90%; 
+    }
+    .not-found-content {
+        font-family: "Inconsolata",sans-serif;
+        width: 100%;
+    }
+    .not-found-content h1 {
+        font-size: 48px;
+        line-height: 71px;
+    }
+    .footer {
+        position: static;
+        font-family: "Inconsolata",sans-serif;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .title {
+        padding: 15px;
+    }
+    nav {
+        margin: 0 15px;
+    }
 }
