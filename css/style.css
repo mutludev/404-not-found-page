@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0 20px;
+}
+
+
+.title {
+    font-family: "Inconsolata",sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px;
+}
